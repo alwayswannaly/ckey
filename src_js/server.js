@@ -47,6 +47,8 @@ server.on('connection', (socket) => {
             delete cache[_key];
           }
         });
+        socket.write('ok');
+        break;
       }
       default: {
         break;
